@@ -119,6 +119,11 @@ You should monitor the systems for any suspicious network activity.
 ![Alt text](screenshots/sniffing-countermeasures.png)
 
 ---
+**Note** : the screenshots has been taken from the "Hackers School"
+
+**Reason** : i have completed my "CEH certification in Hackers School" 
+
+-------------------------------
 
 # Key Concepts Learned
 
@@ -353,3 +358,126 @@ I understand why display filters are important, for analyzing packets
 Wireshark display filters help security analysts look at network activity and find the traffic that's important when they are investigating a security issue.
 
 -------------------------------------
+
+
+# Part 3 – Advanced Packet Analysis Using Wireshark
+
+## Objective
+
+I want to learn how to look at the network traffic that I have captured. This means I will be analyzing the conversations between hosts looking at the TCP streams and finding out how they are talking to each other.
+
+---
+
+# Why Analyze Packets?
+
+Just capturing packets is not enough. I need to look at how the hostsre talking to each other to understand how people, applications and services are sharing data. Wireshark has a lot of features that help me find things that are happening and fix network problems.
+
+---
+
+## 1. View Network Conversations
+
+### What We Are Doing
+
+I am going to look at the conversations between the hosts that are talking to each other.
+
+### Steps
+
+- I will go to **Statistics → Conversations**.
+
+- Then I will look at the TCP and UDP conversations.
+
+### Description
+
+The Conversations window tells me about the hosts that are talking to each other. It helps me find out which systems are sharing data. I can use Wireshark to look at these Network Conversations and understand what is going on.
+
+### Screenshot
+
+![Alt text](screenshots/network-conversations.png)
+
+---
+
+## 2. View Network Endpoints
+
+### What We Are Doing
+
+I want to find out which hosts are in the packet capture.
+
+### Steps
+
+- I will go to **Statistics → Endpoints**.
+
+- Then I will look at the list of IP and MAC addresses.
+
+### Description
+
+The Endpoints window shows me all the devices that I can see in the packet capture. It also shows me some statistics about the traffic. I can use Wireshark to look at these Network Endpoints.
+
+### Screenshot
+
+![ text](screenshots/network-endpoints.png)
+
+---
+
+## 3. Follow TCP Stream
+
+### What We Are Doing
+
+I am going to look at the conversation between a client and a server.
+
+### Steps
+
+- I will choose any TCP packet.
+
+- Then I will right-click the packet.
+
+- I will choose **Follow → TCP Stream**.
+
+### Description
+
+When I follow a stream I can see the whole conversation between two hosts. This makes it easier for me to look at the requests and responses. I can use Wireshark to follow these Streams.
+
+### Screenshot
+
+![Alt text](screenshots/follow-tcp-stream.png)
+
+---
+
+## 4. Analyze Packet Details
+
+### What We Are Doing
+
+I want to look at the protocol headers and packet information.
+
+### Description
+
+I can look at the protocol layers in the Packet Details pane to see the Ethernet, IP TCP/UDP and application-layer information. I can use Wireshark to analyze these Packet Details.
+
+### Screenshot
+
+![Alt text](screenshots/packet-details.png)
+
+---
+
+# Key Concepts Learned
+
+- Network Conversations
+
+- Network Endpoints
+
+- TCP Stream Analysis
+
+- Packet Details
+
+- Protocol Headers
+
+- Network Investigation
+
+---
+
+# conclusion
+
+In this part I learned how to identify the hosts that are talking to each other. 
+I learned how to analyze the conversations, between systems. 
+I learned how to follow a stream. I learned how to look at the protocol headers.. 
+I learned how Wireshark helps people who are investigating network problems and responding to incidents. 
+I used Wireshark to learn about Network Conversations, Network Endpoints and TCP Streams.
