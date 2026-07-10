@@ -864,3 +864,158 @@ In this part I learned
 - how to use Bettercap to discover network hosts configure an ARP spoofing target initiate a Man-in-the-Middle attack and verify network traffic using Wireshark. 
 - I also learned how to detect these attacks from a security analysts perspective by monitoring ARP traffic and investigating suspicious network behavior. 
 - Bettercap is a tool for Man-, in-the-Middle attacks and network analysis.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Part 6 – Detecting and Preventing Sniffing Attacks
+
+## Objective
+
+I want to learn how security professionals find out about sniffing attacks and how they protect networks from these attacks and from Man-in-the-Middle attacks.
+
+---
+
+# Why Detection is Important
+
+Knowing how attackers do sniffing attacks is one part of keeping our computers and networks safe.
+
+Security professionals also need to find activity on the network look into anything that does not seem right and put controls in place to stop attackers from getting sensitive information.
+
+---
+
+# 1. Detecting ARP Spoofing
+
+## What We Are Doing
+
+I am learning how to find out if someone is doing an ARP Spoofing attack.
+
+## Description
+
+The people who watch the network traffic called SOC analysts look at ARP traffic to find anything that's not normal like lots of ARP replies duplicate MAC addresses and changes to the gateway MAC address that are not expected.
+
+### Common Indicators
+
+- The network is sending a lot of ARP Reply packets
+
+- There are MAC Addresses
+
+- The Gateway MAC Address has changed unexpectedly
+
+- The network is not working like it should
+
+- The ARP traffic looks suspicious
+
+### Screenshot
+
+![Alt text](screenshots/arp-poisoning-wireshark.png)
+
+---
+
+# 2. Monitoring Network Traffic
+
+## What We Are Doing
+
+I am using tools to watch the network traffic and find anything
+
+## Description
+
+Security analysts look at what is happening on the network like the packets that are being sent the DNS traffic, the HTTP requests and the ARP communication to find any network behavior that is not normal when they are investigating something.
+
+### Tools
+
+- Wireshark
+
+- IDS/IPS
+
+- SIEM Platforms
+
+- Network Monitoring Solutions
+
+### Screenshot
+
+![Alt text](screenshots/network-endpoints.png)
+
+---
+
+# 3. Preventing Sniffing Attacks
+
+## What We Are Doing
+
+I am learning about the security controls that can stop sniffing attacks.
+
+### Prevention Techniques
+
+- Using HTTPS of HTTP
+
+- Using SSH instead of Telnet
+
+- Using SFTP instead of FTP
+
+- Using a VPN
+
+- Using WPA2 or WPA3 to encrypt the wireless network
+
+- Setting static ARP entries when it is a good idea
+
+- Dividing the network into smaller parts
+
+- Using IDS/IPS to watch the network
+
+### Description
+
+These security controls help keep sensitive information safe from being intercepted and reduce the chance of a successful sniffing attack.
+
+### Screenshot
+
+![Alt text](screenshots/sniffing-countermeasures.png)
+
+---
+
+# SOC Analyst Perspective
+
+A SOC analyst looks into sniffing attacks by:
+
+- Watching for ARP traffic
+
+- Looking at the packets that have been sent
+
+- Finding unexpected changes to MAC addresses
+
+- Looking into suspicious DNS and HTTP traffic
+
+- Responding to signs of Man-in-the-Middle attacks
+
+Knowing about the attacks and how to detect them helps security teams find and respond to network attacks more effectively.
+
+---
+
+# Key Concepts Learned
+
+- Detecting sniffing attacks
+
+- Detecting ARP Spoofing attacks
+
+- Looking at packets
+
+- Watching the network traffic
+
+- Using IDS
+
+- Using IPS
+
+- Using SIEM
+
+- Using HTTPS
+
+- Using a VPN
+
+- Communicating securely
+
+---
+
+# conclusion
+
+In this part I learned how security professionals detect sniffing attacks look into network activity and put controls in place to protect networks from packet interception and Man-, in-the-Middle attacks. 
+I also learned why it is so important to watch the network traffic and use secure communication protocols to protect modern networks.
