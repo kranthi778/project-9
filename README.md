@@ -115,3 +115,11 @@ After finishing this project I learned how to:
 ## Disclaimer
 
 We did this project in a lab, for learning about cybersecurity. We only used authorized systems.
+
+# Author
+
+Kranthi Kumar
+
+I am an Aspiring Cybersecurity Professional, a CEH Student and a Linux and Security Enthusiast.
+
+GitHub: https://github.com/kranthi778
